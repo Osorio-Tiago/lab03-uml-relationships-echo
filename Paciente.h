@@ -6,8 +6,27 @@
 #define BASIC_00_EXAMPLE_PACIENTE_H
 
 #include"PlanAlimentos.h"
-class Paciente {
+#include<iostream>
+#include<sstream>
+using namespace std;
 
+class Paciente{
+private:
+    string nombre;
+    string genero;
+    PlanAlimentos* plan;
+public:
+    Paciente(string,string,PlanAlimentos*);
+    virtual ~Paciente();
+    string getNombre();
+    void setNombre(string);
+    string getGenero();
+    void setGenero(string);
+    PlanAlimentos* getPlan();
+    void setPlan(PlanAlimentos*);
+    void agregaAlimento(Alimento*);
+    virtual string toString() = 0;
+    virtual bool sobrePasaMaximoAzucarDiario() = 0;
 };
 
 
