@@ -11,7 +11,7 @@
 using namespace std;
 
 class Paciente{
-private:
+protected:
     string nombre;
     string genero;
     PlanAlimentos* plan;

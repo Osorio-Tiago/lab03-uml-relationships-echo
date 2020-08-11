@@ -6,6 +6,9 @@
 #define BASIC_00_EXAMPLE_PACIENTEDIABETICO_H
 
 #include "Paciente.h"
+#include <iostream>
+#include<sstream>
+using namespace std;
 
 class PacienteDiabetico: public Paciente {
 private:

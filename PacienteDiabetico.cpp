@@ -4,7 +4,7 @@
 
 #include "PacienteDiabetico.h"
 
-PacienteDiabetico:: PacienteDiabetico(int tipoDiabetes, float dosisInsulina, float azucarDiarioMAX, string nombre, string genero, PlanAlimentos* planAlimento) : Paciente(nombre, genero, planAlimento)
+PacienteDiabetico:: PacienteDiabetico(int tipoDiabetes, float dosisInsulina, float azucarDiarioMAX, string nombre, string genero, PlanAlimentos* plan) : Paciente(nombre, genero, plan)
 {
     this->tipoDiabetes = tipoDiabetes;
     this->azucarDiarioMAX = azucarDiarioMAX;
@@ -36,7 +36,7 @@ string PacienteDiabetico:: toString()
 {
     stringstream s;
     s << Paciente::toString() << endl;
-    s << planAlimento->toString();
+    s << plan->toString();
     s <<  this->getTipoDiabetes()<<endl;
     s <<  this->getDosisInsulina() << endl;
     s << this->getAzucarDiarioMAX() << endl;
@@ -46,7 +46,7 @@ string PacienteDiabetico:: toString()
 
 bool PacienteDiabetico:: sobrepasaMaximoAzucarDiario()
 {
-    if (this->planAlimento->totalAzucarAgg() > 0 || this->planAlimento->totalAzucarNatural() > this->getAzucarDiarioMAX())
+    if (this->plan->totalAzucarAgg() > 0 || this->plan->totalAzucarNatural() > this->getAzucarDiarioMAX())
         return true;
     return false;
 }
