@@ -8,6 +8,21 @@
 #include "Paciente.h"
 
 class PacienteDiabetico: public Paciente {
+private:
+    int tipoDiabetes;
+    float dosisInsulina;
+    float azucarDiarioMAX;
+public:
+    PacienteDiabetico(int , float, float, string, string , PlanAlimentos*);
+    void setTipoDiabetes(int);
+    void setDosisInsulina(float);
+    void setAzucarDiarioMAX(float);
+    int getTipoDiabetes();
+    float getDosisInsulina();
+    float getAzucarDiarioMAX();
+    string toString();
+    bool sobrepasaMaximoAzucarDiario();
+
 
 };
 
