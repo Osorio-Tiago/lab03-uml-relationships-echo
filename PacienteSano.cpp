@@ -3,3 +3,6 @@
 //
 
 #include "PacienteSano.h"
+
+
+PacienteSano::PacienteSano(const string &objetivo) : objetivo(objetivo) {}

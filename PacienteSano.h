@@ -7,7 +7,12 @@
 
 #include "Paciente.h"
 
-class PacienteSano: public Paciente {
+class PacienteSano: public Paciente{
+private:
+    string objetivo;
+public:
+
+    PacienteSano(const string &objetivo);
 
 };
 

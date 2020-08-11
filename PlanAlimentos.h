@@ -4,10 +4,12 @@
 
 #ifndef BASIC_00_EXAMPLE_PLANALIMENTOS_H
 #define BASIC_00_EXAMPLE_PLANALIMENTOS_H
-
 #include"Alimento.h"
+#include "LinkedList.h"
+
 
 class PlanAlimentos {
+
 
 };
 

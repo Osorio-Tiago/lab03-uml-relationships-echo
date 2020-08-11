@@ -29,5 +29,4 @@ public:
     virtual bool sobrePasaMaximoAzucarDiario() = 0;
 };
 
-
 #endif //BASIC_00_EXAMPLE_PACIENTE_H
