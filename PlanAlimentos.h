@@ -9,6 +9,26 @@
 
 
 class PlanAlimentos {
+private:
+    LinkedList* alimentos;
+    string fechaInicio;
+public:
+
+    PlanAlimentos(const string &fechaInicio);
+
+    virtual ~PlanAlimentos();
+
+    const string &getFechaInicio() const;
+
+    void setFechaInicio(const string &fechaInicio);
+
+    void ingresarAlimento(Alimento* alimento);
+
+    int totalAzucarNat();
+
+    int totalAzucarAgg();
+
+    string toString();
 
 
 };

@@ -50,4 +50,3 @@ bool PacienteDiabetico:: sobrepasaMaximoAzucarDiario()
         return true;
     return false;
 }
-
