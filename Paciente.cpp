@@ -38,5 +38,19 @@ void Paciente::setPlan(PlanAlimentos* p) {
 }
 
 void Paciente::agregaAlimento(Alimento * a) {
-    //plan->ingresarAlimento(a);
+    plan->ingresarAlimento(a);
+}
+
+string Paciente::toString() {
+    stringstream s;
+    s << "Nombre:"<<nombre<<endl;
+    s << "Genero:"<<genero<<endl;
+    return s.str();
+}
+
+string Paciente::planAlimentos() {
+    stringstream s;
+    s << "Plan de Alimentos:"<<endl;
+    s << plan->toString();
+    return s.str();
 }
