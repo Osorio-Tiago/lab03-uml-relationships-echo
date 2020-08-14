@@ -4,7 +4,8 @@
 
 #include "PacienteDiabetico.h"
 
-PacienteDiabetico:: PacienteDiabetico(int tipoDiabetes, float dosisInsulina, float azucarDiarioMAX, string nombre, string genero, PlanAlimentos* plan) : Paciente(nombre, genero, plan)
+PacienteDiabetico:: PacienteDiabetico(int tipoDiabetes, float dosisInsulina, float azucarDiarioMAX, string nombre, string genero, PlanAlimentos* plan)
+: Paciente(nombre, genero, plan)
 {
     this->tipoDiabetes = tipoDiabetes;
     this->azucarDiarioMAX = azucarDiarioMAX;

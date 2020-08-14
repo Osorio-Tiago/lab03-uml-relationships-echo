@@ -12,11 +12,11 @@ private:
     string objetivo;
 public:
 
-    PacienteSano(const string &string, const string &string1, PlanAlimentos *alimentos);
+    PacienteSano(string, string, string, PlanAlimentos*);
 
-    const string &getObjetivo() const;
+    string getObjetivo();
 
-    void setObjetivo(const string &objetivo);
+    void setObjetivo(string);
 
     string toString();
 
