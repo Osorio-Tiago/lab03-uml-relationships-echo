@@ -45,7 +45,7 @@ string PacienteDiabetico:: toString()
     return s.str();
 }
 
-bool PacienteDiabetico:: sobrepasaMaximoAzucarDiario()
+bool PacienteDiabetico:: sobrePasaMaximoAzucarDiario()
 {
     if (this->plan->totalAzucarAgg() > 0 || this->plan->totalAzucarNat() > this->getAzucarDiarioMAX())
         return true;

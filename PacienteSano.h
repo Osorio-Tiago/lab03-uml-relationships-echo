@@ -20,7 +20,7 @@ public:
 
     string toString();
 
-    bool sobrepasaMaximoAzucarDiario();
+    bool sobrePasaMaximoAzucarDiario();
 };
 
 

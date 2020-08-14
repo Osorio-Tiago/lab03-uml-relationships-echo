@@ -24,8 +24,7 @@ public:
     float getDosisInsulina();
     float getAzucarDiarioMAX();
     string toString();
-    bool sobrepasaMaximoAzucarDiario();
-
+    bool sobrePasaMaximoAzucarDiario();
 
 };
 

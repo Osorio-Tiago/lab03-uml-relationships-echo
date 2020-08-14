@@ -26,7 +26,7 @@ string PacienteSano::toString() {
 
 }
 
-bool PacienteSano::sobrepasaMaximoAzucarDiario() {
+bool PacienteSano::sobrePasaMaximoAzucarDiario() {
     if (this->getGenero() == "Hombre" && plan->totalAzucarAgg() > 37.5) {
         return true;
     }
