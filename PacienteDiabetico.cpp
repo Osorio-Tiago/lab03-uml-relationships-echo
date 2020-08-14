@@ -37,7 +37,7 @@ string PacienteDiabetico:: toString()
 {
     stringstream s;
 
-    s << Paciente::toString() << endl;
+    s << Paciente::toString();
     s << plan->toString();
     s << this->getTipoDiabetes()<<endl;
     s << this->getDosisInsulina() << endl;

@@ -25,7 +25,7 @@ public:
     PlanAlimentos* getPlan();
     void setPlan(PlanAlimentos*);
     void agregaAlimento(Alimento*);
-    string toString();
+    virtual string toString();
     string planAlimentos();
     virtual bool sobrePasaMaximoAzucarDiario() = 0;
 };

@@ -13,11 +13,10 @@ string PacienteSano::getObjetivo() { return objetivo;}
 
 void PacienteSano::setObjetivo(string o) { objetivo = o;}
 
-string PacienteSano::toString()  {
+string PacienteSano::toString() {
     stringstream s;
-    s << Paciente::toString();
+    s << Paciente::toString()<<endl;
     s << "El objetivo del paciente es: " << getObjetivo() << endl;
-    s << planAlimentos();
     return s.str();
 }
 
