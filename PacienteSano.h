@@ -12,8 +12,15 @@ private:
     string objetivo;
 public:
 
-    PacienteSano(const string &objetivo);
+    PacienteSano(const string &string, const string &string1, PlanAlimentos *alimentos);
 
+    const string &getObjetivo() const;
+
+    void setObjetivo(const string &objetivo);
+
+    string toString();
+
+    bool sobrepasaMaximoAzucarDiario();
 };
 
 
