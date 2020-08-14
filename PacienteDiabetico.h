@@ -16,7 +16,7 @@ private:
     float dosisInsulina;
     float azucarDiarioMAX;
 public:
-    PacienteDiabetico(int , float, float, string, string , PlanAlimentos*);
+    PacienteDiabetico(int tipoDiabetes , float dosisInsulina, float azucarMax, string nombre, string genero, PlanAlimentos*);
     void setTipoDiabetes(int);
     void setDosisInsulina(float);
     void setAzucarDiarioMAX(float);

@@ -12,7 +12,7 @@ private:
     string objetivo;
 public:
 
-    PacienteSano(string, string, string, PlanAlimentos*);
+    PacienteSano(string nombre, string genero, string objetivo, PlanAlimentos*);
 
     string getObjetivo();
 

@@ -36,10 +36,11 @@ float PacienteDiabetico:: getAzucarDiarioMAX() {
 string PacienteDiabetico:: toString()
 {
     stringstream s;
+
     s << Paciente::toString() << endl;
     s << plan->toString();
-    s <<  this->getTipoDiabetes()<<endl;
-    s <<  this->getDosisInsulina() << endl;
+    s << this->getTipoDiabetes()<<endl;
+    s << this->getDosisInsulina() << endl;
     s << this->getAzucarDiarioMAX() << endl;
 
     return s.str();
