@@ -27,7 +27,7 @@ int PlanAlimentos::totalAzucarNat()
     int totalSugar = 0;
     for (int i = 0; i < this->alimentos->cantidad(); i++) {
         aux = dynamic_cast<Alimento*>(this->alimentos->consultarPorPosicion(i));
-        totalSugar += aux->getAzuNatu();
+        totalSugar += aux->getAzucarNatural();
     }
     return totalSugar;
 }
@@ -38,7 +38,7 @@ int PlanAlimentos::totalAzucarAgg()
     int totalSugarAgg = 0;
     for (int i = 0; i < this->alimentos->cantidad(); i++) {
         aux = dynamic_cast<Alimento*>(this->alimentos->consultarPorPosicion(i));
-        totalSugarAgg += aux->getAzuAgg();
+        totalSugarAgg += aux->getAzucarAgregado();
     }
     return totalSugarAgg;
 }
