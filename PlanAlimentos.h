@@ -14,13 +14,13 @@ private:
     string fechaInicio;
 public:
 
-    PlanAlimentos(const string &fechaInicio);
+    PlanAlimentos( string fechaInicio);
 
-    virtual ~PlanAlimentos();
+    ~PlanAlimentos();
 
-    const string &getFechaInicio() const;
+    string getFechaInicio();
 
-    void setFechaInicio(const string &fechaInicio);
+    void setFechaInicio(string fechaInicio);
 
     void ingresarAlimento(Alimento* alimento);
 

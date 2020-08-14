@@ -7,11 +7,11 @@
 
 #include <sstream>
 #include <iostream>
-//#include "ObjetoBase.h"
+#include "ObjetoBase.h"
 
 using namespace std;
 
-class Alimento //: public ObjetoBase
+class Alimento : public ObjetoBase
 {
 private:
 
@@ -20,7 +20,7 @@ private:
     int azucarAgregado;
 
 public:
-    Alimento(string, int , int);
+    Alimento(string nombre, int azucarNatural , int azugarAgregado);
     string getNombre();
     int getAzucarNatural();
     int getAzucarAgregado();

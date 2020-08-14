@@ -8,20 +8,20 @@
 
 int main() {
 
-    cout<<" Hola mundo\n";
-
-    cout << "\tCOMO ES POSIBLE QUE ESO SI LO IMPRIMAAAAAA :C\n";
-
     Paciente* pacienteSano = new PacienteSano("Tiago","Masculino","Mejorar niveles de azucar", new PlanAlimentos("06/11/2019"));
 
-    // Paciente* pacienteEnfermo = new PacienteDiabetico(2, 2.3, 4, "Angelo", "Masculino", new PlanAlimentos("14/8/18"));
+    Paciente* pacienteEnfermo = new PacienteDiabetico(2, 2, 4, "Angelo", "Masculino", new PlanAlimentos("14/8/18"));
 
-    cout << pacienteSano->toString();
+   //pacienteSano->agregaAlimento(new Alimento("Sandia", 5, 3));
 
-   // cout<<pacienteEnfermo->toString()<<endl;
+
+    cout << pacienteSano->toString()<<endl;
+    cout << pacienteEnfermo->toString()<<endl;
+    cout << pacienteSano->planAlimentos()<<endl;
 
 
     delete pacienteSano;
-    //delete pacienteEnfermo;
+    delete pacienteEnfermo;
+
     return 0;
 }

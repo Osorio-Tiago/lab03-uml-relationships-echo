@@ -38,10 +38,10 @@ string PacienteDiabetico:: toString()
     stringstream s;
 
     s << Paciente::toString();
-    s << plan->toString();
-    s << this->getTipoDiabetes()<<endl;
-    s << this->getDosisInsulina() << endl;
-    s << this->getAzucarDiarioMAX() << endl;
+    //s << plan->toString();
+    s << "Tipo de diabetes: " << this->getTipoDiabetes()<<endl;
+    s << "Dosis de insulina: " << this->getDosisInsulina() << endl;
+    s << "Azucar diario maximo: " << this->getAzucarDiarioMAX() << endl;
 
     return s.str();
 }

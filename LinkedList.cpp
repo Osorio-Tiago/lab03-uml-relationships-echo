@@ -61,7 +61,7 @@ string LinkedList::toString()
 
     while (actual != nullptr)
     {
-        s << actual->getDato()->toString() << endl; // Si dato fuera un objeto, sería actual->getDato()->toString()
+        s << actual->getDato()->toString() << endl;
         actual = actual->getSiguiente();
     }
 

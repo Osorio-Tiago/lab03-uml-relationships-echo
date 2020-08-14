@@ -7,7 +7,6 @@
 using namespace std;
 
 
-
 class ObjetoBase{
 public:
     virtual string toString() = 0;

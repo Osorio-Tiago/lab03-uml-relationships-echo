@@ -18,7 +18,7 @@ public:
 
     void setObjetivo(string);
 
-    virtual string toString();
+    string toString();
 
     bool sobrePasaMaximoAzucarDiario();
 };

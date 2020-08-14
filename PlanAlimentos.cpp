@@ -4,7 +4,7 @@
 
 #include "PlanAlimentos.h"
 
-PlanAlimentos::PlanAlimentos(const string &fechaInicio) : fechaInicio(fechaInicio)
+PlanAlimentos::PlanAlimentos(string fechaInicio)
 {
     this->alimentos = new LinkedList();
     this->fechaInicio = fechaInicio;
@@ -12,14 +12,13 @@ PlanAlimentos::PlanAlimentos(const string &fechaInicio) : fechaInicio(fechaInici
 
 PlanAlimentos::~PlanAlimentos() { delete alimentos; }
 
-const string &PlanAlimentos::getFechaInicio() const { return fechaInicio; }
+string PlanAlimentos::getFechaInicio()  { return fechaInicio; }
 
-void PlanAlimentos::setFechaInicio(const string &fechaInicio) { PlanAlimentos::fechaInicio = fechaInicio; }
+void PlanAlimentos::setFechaInicio( string fechaInicio) { PlanAlimentos::fechaInicio = fechaInicio; }
 
 string PlanAlimentos::toString() { return this->alimentos->toString(); }
 
-void PlanAlimentos::ingresarAlimento(Alimento* alimento)
-{ this->alimentos->insertarAlFinal(reinterpret_cast<ObjetoBase *>(alimento)); }
+void PlanAlimentos::ingresarAlimento(Alimento* alimento) { alimentos->insertarAlFinal(alimento); }
 
 int PlanAlimentos::totalAzucarNat()
 {
