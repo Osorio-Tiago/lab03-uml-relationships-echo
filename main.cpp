@@ -1,5 +1,5 @@
 //
-// Created by santi on 14/8/2020.
+// Created by Angelo on 14/8/2020.
 //
 #include "PacienteSano.h"
 #include "PacienteDiabetico.h"
@@ -68,8 +68,4 @@ int main()
     delete arrozConPollo;
     delete caldosa;
 
-    return 0;
-
-
-
-}
+return 0;
