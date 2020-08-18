@@ -1,2 +1,2 @@
 language = "cpp"
-run = "clang++-7 -pthread -std=c++17 -o sample Basic00Example.cpp; ./sample"
+run = "clang++-7 -pthread -std=c++17 -o lab03-uml main.cpp Paciente.cpp -include Paciente.h Alimento.cpp -include Alimento.h PacienteSano.cpp -include PacienteSano.h PacienteDiabetico.cpp -include PacienteDiabetico.h PlanAlimentos.cpp -include PlanAlimentos.h Nodo.cpp -include Nodo.h -include ObjetoBase.h LinkedList.cpp -include LinkedList.h; ./lab03-uml"
