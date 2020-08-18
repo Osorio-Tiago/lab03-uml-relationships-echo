@@ -9,7 +9,7 @@
 int main() {
 
 
-    cout<<"Informacion de los pacientes"<<endl;
+    cout<<"\n\tInformacion de los pacientes"<<endl;
     cout<<"--------------------------------------------"<<endl;
     Paciente* pacienteSano = new PacienteSano("Tiago","Masculino","Mejorar niveles de azucar", new PlanAlimentos("06/11/2019"));
     Paciente* pacienteEnfermo = new PacienteDiabetico(2, 2, 4, "Angelo", "Masculino", new PlanAlimentos("14/8/18"));
@@ -25,8 +25,7 @@ int main() {
     cout << "Paciente diabetico:\n" << pacienteEnfermo->toString()<<endl;
     cout << pacienteEnfermo->planAlimentos()<<endl;
     cout<<"Paciente #3"<<endl;
-    cout << "\nPaciente diabetico 2:\n" << pacienteEnfermo2->toString();
-    cout << pacienteEnfermo2->planAlimentos()<<endl;
+    cout << "\nPaciente diabetico 2:\n" << pacienteEnfermo2->toString()<<endl;
     cout << pacienteEnfermo2->planAlimentos()<<endl;
 
 
