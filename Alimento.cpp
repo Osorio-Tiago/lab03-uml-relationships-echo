@@ -35,16 +35,12 @@ void Alimento::setAzucarAgregado(int azuAgg) {
     this->azucarAgregado = azuAgg;
 }
 
-
-
-
-
 string Alimento::toString()
 {
     stringstream s;
 
-    s  << this->getNombre()<<endl;
-    s << this->getAzucarNatural()<<endl;
-    s <<  this->getAzucarAgregado() << endl;
+    s << "El nombre del alimento es: " << this->getNombre()<<endl;
+    s << "La cantidad de azucar natural es: " << this->getAzucarNatural()<<endl;
+    s << "La cantidad de azucar agregado es: " << this->getAzucarAgregado() << endl;
     return s.str();
 }

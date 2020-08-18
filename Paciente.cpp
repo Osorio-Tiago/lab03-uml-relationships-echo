@@ -7,10 +7,11 @@
 Paciente::Paciente(string n, string g, PlanAlimentos * p) {
     nombre = n;
     genero = g;
+    plan = p;
 }
 
 Paciente::~Paciente() {
-   // delete plan;
+    delete plan;
 }
 
 void Paciente::setNombre(string n) {

@@ -10,6 +10,7 @@
 #include<sstream>
 using namespace std;
 
+
 class Paciente{
 protected:
     string nombre;
